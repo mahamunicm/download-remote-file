@@ -198,5 +198,5 @@ let requestMethod = "GET",
   requestData = {};
 
 _downloadRemotefileHttpReq(requestMethod, requestURL, requestData, function(response){
-  console.log("response", response);
+  _logDebug("response", response);
 }, "downloads/", "sample_" + _timestamps() + ".txt");
